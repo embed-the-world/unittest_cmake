@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/projects/unity_testing/tut/cmake_ex
+CMAKE_SOURCE_DIR = /mnt/c/projects/unity_testing/tut/cmake_test_example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/projects/unity_testing/tut/cmake_ex/build
+CMAKE_BINARY_DIR = /mnt/c/projects/unity_testing/tut/cmake_test_example/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles /mnt/c/projects/unity_testing/tut/cmake_ex/build/external/CMakeFiles/progress.marks
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 external/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles 0
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles /mnt/c/projects/unity_testing/tut/cmake_test_example/build/external/CMakeFiles/progress.marks
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 external/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 external/clean
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 external/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,37 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 external/preinstall
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 external/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 external/preinstall
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 external/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+external/CMakeFiles/CMock.dir/rule:
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 external/CMakeFiles/CMock.dir/rule
+.PHONY : external/CMakeFiles/CMock.dir/rule
+
+# Convenience name for target.
+CMock: external/CMakeFiles/CMock.dir/rule
+
+.PHONY : CMock
+
+# fast build rule for target.
+CMock/fast:
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f external/CMakeFiles/CMock.dir/build.make external/CMakeFiles/CMock.dir/build
+.PHONY : CMock/fast
+
+# Convenience name for target.
 external/CMakeFiles/Unity.dir/rule:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 external/CMakeFiles/Unity.dir/rule
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 external/CMakeFiles/Unity.dir/rule
 .PHONY : external/CMakeFiles/Unity.dir/rule
 
 # Convenience name for target.
@@ -133,8 +148,35 @@ Unity: external/CMakeFiles/Unity.dir/rule
 
 # fast build rule for target.
 Unity/fast:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f external/CMakeFiles/Unity.dir/build.make external/CMakeFiles/Unity.dir/build
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f external/CMakeFiles/Unity.dir/build.make external/CMakeFiles/Unity.dir/build
 .PHONY : Unity/fast
+
+CMock/src/cmock.o: CMock/src/cmock.c.o
+
+.PHONY : CMock/src/cmock.o
+
+# target to build an object file
+CMock/src/cmock.c.o:
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f external/CMakeFiles/CMock.dir/build.make external/CMakeFiles/CMock.dir/CMock/src/cmock.c.o
+.PHONY : CMock/src/cmock.c.o
+
+CMock/src/cmock.i: CMock/src/cmock.c.i
+
+.PHONY : CMock/src/cmock.i
+
+# target to preprocess a source file
+CMock/src/cmock.c.i:
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f external/CMakeFiles/CMock.dir/build.make external/CMakeFiles/CMock.dir/CMock/src/cmock.c.i
+.PHONY : CMock/src/cmock.c.i
+
+CMock/src/cmock.s: CMock/src/cmock.c.s
+
+.PHONY : CMock/src/cmock.s
+
+# target to generate assembly for a file
+CMock/src/cmock.c.s:
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f external/CMakeFiles/CMock.dir/build.make external/CMakeFiles/CMock.dir/CMock/src/cmock.c.s
+.PHONY : CMock/src/cmock.c.s
 
 Unity/src/unity.o: Unity/src/unity.c.o
 
@@ -142,7 +184,7 @@ Unity/src/unity.o: Unity/src/unity.c.o
 
 # target to build an object file
 Unity/src/unity.c.o:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f external/CMakeFiles/Unity.dir/build.make external/CMakeFiles/Unity.dir/Unity/src/unity.c.o
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f external/CMakeFiles/Unity.dir/build.make external/CMakeFiles/Unity.dir/Unity/src/unity.c.o
 .PHONY : Unity/src/unity.c.o
 
 Unity/src/unity.i: Unity/src/unity.c.i
@@ -151,7 +193,7 @@ Unity/src/unity.i: Unity/src/unity.c.i
 
 # target to preprocess a source file
 Unity/src/unity.c.i:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f external/CMakeFiles/Unity.dir/build.make external/CMakeFiles/Unity.dir/Unity/src/unity.c.i
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f external/CMakeFiles/Unity.dir/build.make external/CMakeFiles/Unity.dir/Unity/src/unity.c.i
 .PHONY : Unity/src/unity.c.i
 
 Unity/src/unity.s: Unity/src/unity.c.s
@@ -160,7 +202,7 @@ Unity/src/unity.s: Unity/src/unity.c.s
 
 # target to generate assembly for a file
 Unity/src/unity.c.s:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f external/CMakeFiles/Unity.dir/build.make external/CMakeFiles/Unity.dir/Unity/src/unity.c.s
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f external/CMakeFiles/Unity.dir/build.make external/CMakeFiles/Unity.dir/Unity/src/unity.c.s
 .PHONY : Unity/src/unity.c.s
 
 # Help Target
@@ -172,7 +214,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... CMock"
 	@echo "... Unity"
+	@echo "... CMock/src/cmock.o"
+	@echo "... CMock/src/cmock.i"
+	@echo "... CMock/src/cmock.s"
 	@echo "... Unity/src/unity.o"
 	@echo "... Unity/src/unity.i"
 	@echo "... Unity/src/unity.s"
@@ -187,6 +233,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

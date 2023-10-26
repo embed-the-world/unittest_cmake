@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/projects/unity_testing/tut/cmake_ex/src/math_lib.c" "/mnt/c/projects/unity_testing/tut/cmake_ex/build/src/CMakeFiles/my_lib.dir/math_lib.c.o"
-  "/mnt/c/projects/unity_testing/tut/cmake_ex/src/my_lib.c" "/mnt/c/projects/unity_testing/tut/cmake_ex/build/src/CMakeFiles/my_lib.dir/my_lib.c.o"
+  "/mnt/c/projects/unity_testing/tut/cmake_test_example/src/math_lib.c" "/mnt/c/projects/unity_testing/tut/cmake_test_example/build/src/CMakeFiles/my_lib.dir/math_lib.c.o"
+  "/mnt/c/projects/unity_testing/tut/cmake_test_example/src/my_lib.c" "/mnt/c/projects/unity_testing/tut/cmake_test_example/build/src/CMakeFiles/my_lib.dir/my_lib.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

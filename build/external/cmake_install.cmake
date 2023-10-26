@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/projects/unity_testing/tut/cmake_ex/external
+# Install script for directory: /mnt/c/projects/unity_testing/tut/cmake_test_example/external
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

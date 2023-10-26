@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/projects/unity_testing/tut/cmake_ex
+CMAKE_SOURCE_DIR = /mnt/c/projects/unity_testing/tut/cmake_test_example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/projects/unity_testing/tut/cmake_ex/build
+CMAKE_BINARY_DIR = /mnt/c/projects/unity_testing/tut/cmake_test_example/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles /mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles /mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -499,6 +499,32 @@ my_lib/fast:
 .PHONY : my_lib/fast
 
 #=============================================================================
+# Target rules for targets named mock_math_lib
+
+# Build rule for target.
+mock_math_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mock_math_lib
+.PHONY : mock_math_lib
+
+# fast build rule for target.
+mock_math_lib/fast:
+	$(MAKE) -f mocks/CMakeFiles/mock_math_lib.dir/build.make mocks/CMakeFiles/mock_math_lib.dir/build
+.PHONY : mock_math_lib/fast
+
+#=============================================================================
+# Target rules for targets named CMock
+
+# Build rule for target.
+CMock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CMock
+.PHONY : CMock
+
+# fast build rule for target.
+CMock/fast:
+	$(MAKE) -f external/CMakeFiles/CMock.dir/build.make external/CMakeFiles/CMock.dir/build
+.PHONY : CMock/fast
+
+#=============================================================================
 # Target rules for targets named Unity
 
 # Build rule for target.
@@ -523,6 +549,19 @@ suite_1_app: cmake_check_build_system
 suite_1_app/fast:
 	$(MAKE) -f test/suite_1/CMakeFiles/suite_1_app.dir/build.make test/suite_1/CMakeFiles/suite_1_app.dir/build
 .PHONY : suite_1_app/fast
+
+#=============================================================================
+# Target rules for targets named suite_2_mocker
+
+# Build rule for target.
+suite_2_mocker: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 suite_2_mocker
+.PHONY : suite_2_mocker
+
+# fast build rule for target.
+suite_2_mocker/fast:
+	$(MAKE) -f test/mocker_test/CMakeFiles/suite_2_mocker.dir/build.make test/mocker_test/CMakeFiles/suite_2_mocker.dir/build
+.PHONY : suite_2_mocker/fast
 
 # Help Target
 help:
@@ -562,8 +601,11 @@ help:
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
 	@echo "... my_lib"
+	@echo "... mock_math_lib"
+	@echo "... CMock"
 	@echo "... Unity"
 	@echo "... suite_1_app"
+	@echo "... suite_2_mocker"
 .PHONY : help
 
 

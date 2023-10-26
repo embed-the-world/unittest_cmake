@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/mnt/c/projects/unity_testing/tut/cmake_ex/src 
+C_INCLUDES = -I/mnt/c/projects/unity_testing/tut/cmake_test_example/src 
 

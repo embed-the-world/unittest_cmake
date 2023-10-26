@@ -40,7 +40,7 @@ time.h
 
 ../src/my_lib.h
 
-/mnt/c/projects/unity_testing/tut/cmake_ex/test/suite_1/suite_1.c
+/mnt/c/projects/unity_testing/tut/cmake_test_example/test/suite_1/suite_1.c
 unity.h
 -
 my_lib.h

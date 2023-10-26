@@ -1,2 +1,3 @@
-suite_1_test 1 0.0032333
+suite_1_test 1 0.0033548
+suite_2_mocker_test 1 0.0043268
 ---

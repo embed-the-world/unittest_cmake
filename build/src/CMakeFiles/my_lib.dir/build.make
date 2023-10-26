@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/projects/unity_testing/tut/cmake_ex
+CMAKE_SOURCE_DIR = /mnt/c/projects/unity_testing/tut/cmake_test_example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/projects/unity_testing/tut/cmake_ex/build
+CMAKE_BINARY_DIR = /mnt/c/projects/unity_testing/tut/cmake_test_example/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/my_lib.dir/depend.make
@@ -59,29 +59,29 @@ include src/CMakeFiles/my_lib.dir/flags.make
 
 src/CMakeFiles/my_lib.dir/math_lib.c.o: src/CMakeFiles/my_lib.dir/flags.make
 src/CMakeFiles/my_lib.dir/math_lib.c.o: ../src/math_lib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/my_lib.dir/math_lib.c.o"
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_lib.dir/math_lib.c.o   -c /mnt/c/projects/unity_testing/tut/cmake_ex/src/math_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/my_lib.dir/math_lib.c.o"
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_lib.dir/math_lib.c.o   -c /mnt/c/projects/unity_testing/tut/cmake_test_example/src/math_lib.c
 
 src/CMakeFiles/my_lib.dir/math_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_lib.dir/math_lib.c.i"
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/projects/unity_testing/tut/cmake_ex/src/math_lib.c > CMakeFiles/my_lib.dir/math_lib.c.i
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/projects/unity_testing/tut/cmake_test_example/src/math_lib.c > CMakeFiles/my_lib.dir/math_lib.c.i
 
 src/CMakeFiles/my_lib.dir/math_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_lib.dir/math_lib.c.s"
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/projects/unity_testing/tut/cmake_ex/src/math_lib.c -o CMakeFiles/my_lib.dir/math_lib.c.s
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/projects/unity_testing/tut/cmake_test_example/src/math_lib.c -o CMakeFiles/my_lib.dir/math_lib.c.s
 
 src/CMakeFiles/my_lib.dir/my_lib.c.o: src/CMakeFiles/my_lib.dir/flags.make
 src/CMakeFiles/my_lib.dir/my_lib.c.o: ../src/my_lib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/my_lib.dir/my_lib.c.o"
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_lib.dir/my_lib.c.o   -c /mnt/c/projects/unity_testing/tut/cmake_ex/src/my_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/my_lib.dir/my_lib.c.o"
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_lib.dir/my_lib.c.o   -c /mnt/c/projects/unity_testing/tut/cmake_test_example/src/my_lib.c
 
 src/CMakeFiles/my_lib.dir/my_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_lib.dir/my_lib.c.i"
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/projects/unity_testing/tut/cmake_ex/src/my_lib.c > CMakeFiles/my_lib.dir/my_lib.c.i
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/projects/unity_testing/tut/cmake_test_example/src/my_lib.c > CMakeFiles/my_lib.dir/my_lib.c.i
 
 src/CMakeFiles/my_lib.dir/my_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_lib.dir/my_lib.c.s"
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/projects/unity_testing/tut/cmake_ex/src/my_lib.c -o CMakeFiles/my_lib.dir/my_lib.c.s
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/projects/unity_testing/tut/cmake_test_example/src/my_lib.c -o CMakeFiles/my_lib.dir/my_lib.c.s
 
 # Object files for target my_lib
 my_lib_OBJECTS = \
@@ -95,9 +95,9 @@ src/libmy_lib.a: src/CMakeFiles/my_lib.dir/math_lib.c.o
 src/libmy_lib.a: src/CMakeFiles/my_lib.dir/my_lib.c.o
 src/libmy_lib.a: src/CMakeFiles/my_lib.dir/build.make
 src/libmy_lib.a: src/CMakeFiles/my_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libmy_lib.a"
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build/src && $(CMAKE_COMMAND) -P CMakeFiles/my_lib.dir/cmake_clean_target.cmake
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_lib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libmy_lib.a"
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src && $(CMAKE_COMMAND) -P CMakeFiles/my_lib.dir/cmake_clean_target.cmake
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/my_lib.dir/build: src/libmy_lib.a
@@ -105,10 +105,10 @@ src/CMakeFiles/my_lib.dir/build: src/libmy_lib.a
 .PHONY : src/CMakeFiles/my_lib.dir/build
 
 src/CMakeFiles/my_lib.dir/clean:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build/src && $(CMAKE_COMMAND) -P CMakeFiles/my_lib.dir/cmake_clean.cmake
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src && $(CMAKE_COMMAND) -P CMakeFiles/my_lib.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/my_lib.dir/clean
 
 src/CMakeFiles/my_lib.dir/depend:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/projects/unity_testing/tut/cmake_ex /mnt/c/projects/unity_testing/tut/cmake_ex/src /mnt/c/projects/unity_testing/tut/cmake_ex/build /mnt/c/projects/unity_testing/tut/cmake_ex/build/src /mnt/c/projects/unity_testing/tut/cmake_ex/build/src/CMakeFiles/my_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/projects/unity_testing/tut/cmake_test_example /mnt/c/projects/unity_testing/tut/cmake_test_example/src /mnt/c/projects/unity_testing/tut/cmake_test_example/build /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src /mnt/c/projects/unity_testing/tut/cmake_test_example/build/src/CMakeFiles/my_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/my_lib.dir/depend
 

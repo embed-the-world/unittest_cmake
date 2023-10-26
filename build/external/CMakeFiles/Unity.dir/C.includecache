@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/projects/unity_testing/tut/cmake_ex/external/Unity/src/unity.c
+/mnt/c/projects/unity_testing/tut/cmake_test_example/external/Unity/src/unity.c
 unity.h
-/mnt/c/projects/unity_testing/tut/cmake_ex/external/Unity/src/unity.h
+/mnt/c/projects/unity_testing/tut/cmake_test_example/external/Unity/src/unity.h
 
-/mnt/c/projects/unity_testing/tut/cmake_ex/external/Unity/src/unity.h
+/mnt/c/projects/unity_testing/tut/cmake_test_example/external/Unity/src/unity.h
 unity_internals.h
-/mnt/c/projects/unity_testing/tut/cmake_ex/external/Unity/src/unity_internals.h
+/mnt/c/projects/unity_testing/tut/cmake_test_example/external/Unity/src/unity_internals.h
 
-/mnt/c/projects/unity_testing/tut/cmake_ex/external/Unity/src/unity_internals.h
+/mnt/c/projects/unity_testing/tut/cmake_test_example/external/Unity/src/unity_internals.h
 unity_config.h
-/mnt/c/projects/unity_testing/tut/cmake_ex/external/Unity/src/unity_config.h
+/mnt/c/projects/unity_testing/tut/cmake_test_example/external/Unity/src/unity_config.h
 setjmp.h
 -
 math.h

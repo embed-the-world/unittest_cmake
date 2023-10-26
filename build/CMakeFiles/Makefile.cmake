@@ -11,8 +11,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "../external/CMakeLists.txt"
+  "../mocks/CMakeLists.txt"
   "../src/CMakeLists.txt"
   "../test/CMakeLists.txt"
+  "../test/mocker_test/CMakeLists.txt"
   "../test/suite_1/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c"
@@ -101,9 +103,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "DartConfiguration.tcl"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "mocks/CMakeFiles/CMakeDirectoryInformation.cmake"
   "external/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/suite_1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/mocker_test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -137,6 +141,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousTest.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "src/CMakeFiles/my_lib.dir/DependInfo.cmake"
+  "mocks/CMakeFiles/mock_math_lib.dir/DependInfo.cmake"
+  "external/CMakeFiles/CMock.dir/DependInfo.cmake"
   "external/CMakeFiles/Unity.dir/DependInfo.cmake"
   "test/suite_1/CMakeFiles/suite_1_app.dir/DependInfo.cmake"
+  "test/mocker_test/CMakeFiles/suite_2_mocker.dir/DependInfo.cmake"
   )

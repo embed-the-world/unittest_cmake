@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/projects/unity_testing/tut/cmake_ex
+CMAKE_SOURCE_DIR = /mnt/c/projects/unity_testing/tut/cmake_test_example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/projects/unity_testing/tut/cmake_ex/build
+CMAKE_BINARY_DIR = /mnt/c/projects/unity_testing/tut/cmake_test_example/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles /mnt/c/projects/unity_testing/tut/cmake_ex/build/test/suite_1/CMakeFiles/progress.marks
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_ex/build/CMakeFiles 0
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles /mnt/c/projects/unity_testing/tut/cmake_test_example/build/test/suite_1/CMakeFiles/progress.marks
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/projects/unity_testing/tut/cmake_test_example/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/clean
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/preinstall
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/preinstall
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/suite_1/CMakeFiles/suite_1_app.dir/rule:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/CMakeFiles/suite_1_app.dir/rule
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f CMakeFiles/Makefile2 test/suite_1/CMakeFiles/suite_1_app.dir/rule
 .PHONY : test/suite_1/CMakeFiles/suite_1_app.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ suite_1_app: test/suite_1/CMakeFiles/suite_1_app.dir/rule
 
 # fast build rule for target.
 suite_1_app/fast:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f test/suite_1/CMakeFiles/suite_1_app.dir/build.make test/suite_1/CMakeFiles/suite_1_app.dir/build
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f test/suite_1/CMakeFiles/suite_1_app.dir/build.make test/suite_1/CMakeFiles/suite_1_app.dir/build
 .PHONY : suite_1_app/fast
 
 suite_1.o: suite_1.c.o
@@ -142,7 +142,7 @@ suite_1.o: suite_1.c.o
 
 # target to build an object file
 suite_1.c.o:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f test/suite_1/CMakeFiles/suite_1_app.dir/build.make test/suite_1/CMakeFiles/suite_1_app.dir/suite_1.c.o
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f test/suite_1/CMakeFiles/suite_1_app.dir/build.make test/suite_1/CMakeFiles/suite_1_app.dir/suite_1.c.o
 .PHONY : suite_1.c.o
 
 suite_1.i: suite_1.c.i
@@ -151,7 +151,7 @@ suite_1.i: suite_1.c.i
 
 # target to preprocess a source file
 suite_1.c.i:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f test/suite_1/CMakeFiles/suite_1_app.dir/build.make test/suite_1/CMakeFiles/suite_1_app.dir/suite_1.c.i
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f test/suite_1/CMakeFiles/suite_1_app.dir/build.make test/suite_1/CMakeFiles/suite_1_app.dir/suite_1.c.i
 .PHONY : suite_1.c.i
 
 suite_1.s: suite_1.c.s
@@ -160,7 +160,7 @@ suite_1.s: suite_1.c.s
 
 # target to generate assembly for a file
 suite_1.c.s:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(MAKE) -f test/suite_1/CMakeFiles/suite_1_app.dir/build.make test/suite_1/CMakeFiles/suite_1_app.dir/suite_1.c.s
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(MAKE) -f test/suite_1/CMakeFiles/suite_1_app.dir/build.make test/suite_1/CMakeFiles/suite_1_app.dir/suite_1.c.s
 .PHONY : suite_1.c.s
 
 # Help Target
@@ -187,6 +187,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/c/projects/unity_testing/tut/cmake_ex/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/projects/unity_testing/tut/cmake_test_example/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

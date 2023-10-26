@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/projects/unity_testing/tut/cmake_ex/test
+# Install script for directory: /mnt/c/projects/unity_testing/tut/cmake_test_example/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/projects/unity_testing/tut/cmake_ex/build/test/suite_1/cmake_install.cmake")
+  include("/mnt/c/projects/unity_testing/tut/cmake_test_example/build/test/suite_1/cmake_install.cmake")
+  include("/mnt/c/projects/unity_testing/tut/cmake_test_example/build/test/mocker_test/cmake_install.cmake")
 
 endif()
 
