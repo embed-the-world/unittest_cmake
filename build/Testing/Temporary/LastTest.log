@@ -1,0 +1,24 @@
+Start testing: Oct 26 15:20 CEST
+----------------------------------------------------------
+1/1 Testing: suite_1_test
+1/1 Test: suite_1_test
+Command: "/mnt/c/projects/unity_testing/tut/cmake_ex/build/test/suite_1/suite_1_app"
+Directory: /mnt/c/projects/unity_testing/tut/cmake_ex/build/test/suite_1
+"suite_1_test" start time: Oct 26 15:20 CEST
+Output:
+----------------------------------------------------------
+/mnt/c/projects/unity_testing/tut/cmake_ex/test/suite_1/suite_1.c:39:test_my_lib_calc_sum_1:PASS
+/mnt/c/projects/unity_testing/tut/cmake_ex/test/suite_1/suite_1.c:40:test_my_lib_calc_sum_2:PASS
+
+-----------------------
+2 Tests 0 Failures 0 Ignored 
+OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"suite_1_test" end time: Oct 26 15:20 CEST
+"suite_1_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 26 15:20 CEST

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/projects/unity_testing/tut/cmake_ex/src/math_lib.c
+math_lib.h
+/mnt/c/projects/unity_testing/tut/cmake_ex/src/math_lib.h
+
+/mnt/c/projects/unity_testing/tut/cmake_ex/src/math_lib.h
+
+/mnt/c/projects/unity_testing/tut/cmake_ex/src/my_lib.c
+my_lib.h
+/mnt/c/projects/unity_testing/tut/cmake_ex/src/my_lib.h
+math_lib.h
+/mnt/c/projects/unity_testing/tut/cmake_ex/src/math_lib.h
+
+/mnt/c/projects/unity_testing/tut/cmake_ex/src/my_lib.h
+

@@ -1,0 +1,17 @@
+:cmock:
+  :attributes:
+    - __funky
+    - __intrinsic
+  :strippables:
+    - extern
+  :mock_path: "mocks"
+  :mock_prefix: "mock_"
+  :plugins:
+    - :expect
+    - :ignore
+    - :ignore_arg
+    - :expect_any_args
+    - :callback
+    - :return_thru_ptr
+  :verbosity: 3
+  :when_ptr: :compare

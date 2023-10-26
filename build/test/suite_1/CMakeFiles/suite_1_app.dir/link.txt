@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/suite_1_app.dir/suite_1.c.o  -o suite_1_app  ../../src/libmy_lib.a ../../external/libUnity.a 
