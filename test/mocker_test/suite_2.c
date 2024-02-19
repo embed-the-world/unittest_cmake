@@ -13,8 +13,8 @@ void tearDown(void) {}
 
 void test_my_lib_calc_sum_mocker_1 (void)
 {
-	sum_two_ints_ExpectAndReturn(7, 2, 9);
-	TEST_ASSERT_EQUAL(calc_sum(7, 2), 9);
+	sum_two_ints_ExpectAndReturn(7, 2, 7);
+	TEST_ASSERT_EQUAL(calc_sum(7, 2), 7);
 }
 
 

@@ -1,11 +1,11 @@
 
 
 .PHONY: all
-
 all: clean
 	@mkdir -p build/
 	@cmake -S . -B build/
-	@cd build && make && make test
+	@make --directory=build --file=Makefile
+	@make --directory=build --file=Makefile test
 
 .PHONY: clean
 clean:
